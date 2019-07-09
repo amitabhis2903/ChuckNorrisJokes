@@ -12,6 +12,8 @@
 		001603D822D371BC00E53399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001603D622D371BC00E53399 /* Main.storyboard */; };
 		001603DA22D371BE00E53399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001603D922D371BE00E53399 /* Assets.xcassets */; };
 		001603DD22D371BE00E53399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001603DB22D371BE00E53399 /* LaunchScreen.storyboard */; };
+		001603EB22D3822F00E53399 /* theatre-masks_318-1606.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 001603EA22D3822F00E53399 /* theatre-masks_318-1606.jpg */; };
+		001603ED22D3ABCB00E53399 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001603EC22D3ABCB00E53399 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		001603D922D371BE00E53399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		001603DC22D371BE00E53399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		001603DE22D371BE00E53399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		001603EA22D3822F00E53399 /* theatre-masks_318-1606.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "theatre-masks_318-1606.jpg"; sourceTree = "<group>"; };
+		001603EC22D3ABCB00E53399 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				001603D922D371BE00E53399 /* Assets.xcassets */,
 				001603DB22D371BE00E53399 /* LaunchScreen.storyboard */,
 				001603DE22D371BE00E53399 /* Info.plist */,
+				001603EA22D3822F00E53399 /* theatre-masks_318-1606.jpg */,
+				001603EC22D3ABCB00E53399 /* HomeViewController.swift */,
 			);
 			path = ChuckNorrisJokes;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 				001603DD22D371BE00E53399 /* LaunchScreen.storyboard in Resources */,
 				001603DA22D371BE00E53399 /* Assets.xcassets in Resources */,
 				001603D822D371BC00E53399 /* Main.storyboard in Resources */,
+				001603EB22D3822F00E53399 /* theatre-masks_318-1606.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +144,7 @@
 			files = (
 				001603D522D371BC00E53399 /* ViewController.swift in Sources */,
 				001603D322D371BC00E53399 /* AppDelegate.swift in Sources */,
+				001603ED22D3ABCB00E53399 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
