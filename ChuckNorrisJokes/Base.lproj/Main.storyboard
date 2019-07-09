@@ -157,6 +157,21 @@
             </objects>
             <point key="canvasLocation" x="1752.8" y="759.60591133004925"/>
         </scene>
+        <!--Random Joke View Controller-->
+        <scene sceneID="cDm-OY-b0t">
+            <objects>
+                <viewController storyboardIdentifier="RandomJokeViewController" id="Jh0-u3-Cgh" customClass="RandomJokeViewController" customModule="ChuckNorrisJokes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nup-6t-pah">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="McN-nP-NTo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CqC-wO-c40" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2542" y="761"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="cer-hh-TEr">
             <objects>
