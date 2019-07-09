@@ -1,5 +1,5 @@
 //
-//  Random.swift
+//  Constant.swift
 //  ChuckNorrisJokes
 //
 //  Created by A on 09/07/19.
@@ -8,8 +8,5 @@
 
 import Foundation
 
-struct Random: Decodable {
-    let id: String?
-    let value: String?
-    
-}
+
+let RANDOM_URL = "https://api.chucknorris.io/jokes/random"

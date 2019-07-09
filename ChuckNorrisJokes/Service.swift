@@ -59,4 +59,39 @@ class Service: NSObject {
         }.resume()
         
     }
+    
+    
+    func fetchGenericData<T: Decodable>(urlString: String, completion: @escaping (T?) -> ()) {
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url) { (data, resp, error) in
+            
+            if let err = error {
+                print("Failed to fetch data ", err)
+                return
+            }
+            
+            
+            //Check response
+            guard let data = data else {
+                return
+            }
+            
+            do {
+                
+                let objc = try JSONDecoder().decode(T.self, from: data)
+                DispatchQueue.main.async {
+                    completion(objc)
+                }
+                
+                
+            }catch let err {
+                print("Failed to decode : \(err.localizedDescription)")
+            }
+            
+            }.resume()
+        
+    }
 }

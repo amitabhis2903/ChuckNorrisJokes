@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		001603D322D371BC00E53399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001603D222D371BC00E53399 /* AppDelegate.swift */; };
-		001603D522D371BC00E53399 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001603D422D371BC00E53399 /* ViewController.swift */; };
+		001603D522D371BC00E53399 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001603D422D371BC00E53399 /* LoginViewController.swift */; };
 		001603D822D371BC00E53399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001603D622D371BC00E53399 /* Main.storyboard */; };
 		001603DA22D371BE00E53399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001603D922D371BE00E53399 /* Assets.xcassets */; };
 		001603DD22D371BE00E53399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001603DB22D371BE00E53399 /* LaunchScreen.storyboard */; };
@@ -18,12 +18,13 @@
 		001603F122D468DE00E53399 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001603F022D468DE00E53399 /* Service.swift */; };
 		001603F322D4707B00E53399 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001603F222D4707B00E53399 /* Random.swift */; };
 		001603F522D4783200E53399 /* RandomJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001603F422D4783200E53399 /* RandomJokeViewController.swift */; };
+		001603FB22D47E1000E53399 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001603FA22D47E1000E53399 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		001603CF22D371BC00E53399 /* ChuckNorrisJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		001603D222D371BC00E53399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		001603D422D371BC00E53399 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		001603D422D371BC00E53399 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 		001603D722D371BC00E53399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		001603D922D371BE00E53399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		001603DC22D371BE00E53399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +35,7 @@
 		001603F022D468DE00E53399 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Service.swift; path = ../Service.swift; sourceTree = "<group>"; };
 		001603F222D4707B00E53399 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		001603F422D4783200E53399 /* RandomJokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RandomJokeViewController.swift; path = ../RandomJokeViewController.swift; sourceTree = "<group>"; };
+		001603FA22D47E1000E53399 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,8 @@
 			isa = PBXGroup;
 			children = (
 				001603D122D371BC00E53399 /* ChuckNorrisJokes */,
+				001603D622D371BC00E53399 /* Main.storyboard */,
+				001603DB22D371BE00E53399 /* LaunchScreen.storyboard */,
 				001603D022D371BC00E53399 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,7 +82,7 @@
 		001603F622D479E400E53399 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				001603D422D371BC00E53399 /* ViewController.swift */,
+				001603D422D371BC00E53399 /* LoginViewController.swift */,
 				001603EC22D3ABCB00E53399 /* HomeViewController.swift */,
 				001603F422D4783200E53399 /* RandomJokeViewController.swift */,
 			);
@@ -98,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				001603F022D468DE00E53399 /* Service.swift */,
+				001603FA22D47E1000E53399 /* Constant.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -106,9 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				001603EA22D3822F00E53399 /* theatre-masks_318-1606.jpg */,
-				001603D622D371BC00E53399 /* Main.storyboard */,
 				001603D922D371BE00E53399 /* Assets.xcassets */,
-				001603DB22D371BE00E53399 /* LaunchScreen.storyboard */,
 				001603DE22D371BE00E53399 /* Info.plist */,
 			);
 			path = "Supporting FIles";
@@ -187,8 +190,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				001603F522D4783200E53399 /* RandomJokeViewController.swift in Sources */,
-				001603D522D371BC00E53399 /* ViewController.swift in Sources */,
+				001603D522D371BC00E53399 /* LoginViewController.swift in Sources */,
 				001603D322D371BC00E53399 /* AppDelegate.swift in Sources */,
+				001603FB22D47E1000E53399 /* Constant.swift in Sources */,
 				001603F322D4707B00E53399 /* Random.swift in Sources */,
 				001603F122D468DE00E53399 /* Service.swift in Sources */,
 				001603ED22D3ABCB00E53399 /* HomeViewController.swift in Sources */,

@@ -10,8 +10,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    var random: Random?
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,32 +20,19 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .always
         
-        let logoutBarButtonItem = UIBarButtonItem(title: "Random Joke", style: .done, target: self, action: #selector(getRandomJokes))
-        navigationItem.rightBarButtonItem  = logoutBarButtonItem
+        let randomJokeBarButtonItem = UIBarButtonItem(title: "Random Joke", style: .done, target: self, action: #selector(getRandomJokes))
+        navigationItem.rightBarButtonItem  = randomJokeBarButtonItem
         
         // Do any additional setup after loading the view.
     }
     
     
     @objc func getRandomJokes() {
-        
-        
-        Service.shared.fetchRandom_Joke { (random, err) in
-            
-            
-            if let err = err {
-                print("Failed to fetch category:", err)
-                return
-            }
-            
-            print("Data: \(random!)")
-            
-            self.random = random
-            
-            DispatchQueue.main.async {
                 let randomJokeVC = self.storyboard?.instantiateViewController(withIdentifier: "RandomJokeViewController") as? RandomJokeViewController
-                self.navigationController?.pushViewController(randomJokeVC!, animated: true)            }
-            
+                self.navigationController?.pushViewController(randomJokeVC!, animated: true)
+        
         }
-    }
+    
+    
+    
 }
