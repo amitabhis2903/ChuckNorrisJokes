@@ -19,6 +19,9 @@
 		001603F322D4707B00E53399 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001603F222D4707B00E53399 /* Random.swift */; };
 		001603F522D4783200E53399 /* RandomJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001603F422D4783200E53399 /* RandomJokeViewController.swift */; };
 		001603FB22D47E1000E53399 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001603FA22D47E1000E53399 /* Constant.swift */; };
+		001603FF22D4967A00E53399 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001603FE22D4967A00E53399 /* CategoryCollectionViewCell.swift */; };
+		0016040422D4E37400E53399 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016040322D4E37400E53399 /* DataModel.swift */; };
+		0016040622D5BFF300E53399 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016040522D5BFF300E53399 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		001603F222D4707B00E53399 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		001603F422D4783200E53399 /* RandomJokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RandomJokeViewController.swift; path = ../RandomJokeViewController.swift; sourceTree = "<group>"; };
 		001603FA22D47E1000E53399 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		001603FE22D4967A00E53399 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		0016040322D4E37400E53399 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		0016040522D5BFF300E53399 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +77,12 @@
 			isa = PBXGroup;
 			children = (
 				001603D222D371BC00E53399 /* AppDelegate.swift */,
+				0016040022D4968300E53399 /* View */,
 				001603F722D47A0C00E53399 /* Model */,
 				001603F622D479E400E53399 /* Controller */,
 				001603F822D47A3800E53399 /* Network */,
 				001603F922D47A4A00E53399 /* Supporting FIles */,
+				0016040522D5BFF300E53399 /* Helper.swift */,
 			);
 			path = ChuckNorrisJokes;
 			sourceTree = "<group>";
@@ -94,6 +102,7 @@
 			children = (
 				001603EE22D4689D00E53399 /* Category.swift */,
 				001603F222D4707B00E53399 /* Random.swift */,
+				0016040322D4E37400E53399 /* DataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,6 +124,14 @@
 				001603DE22D371BE00E53399 /* Info.plist */,
 			);
 			path = "Supporting FIles";
+			sourceTree = "<group>";
+		};
+		0016040022D4968300E53399 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				001603FE22D4967A00E53399 /* CategoryCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,10 +206,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0016040622D5BFF300E53399 /* Helper.swift in Sources */,
 				001603F522D4783200E53399 /* RandomJokeViewController.swift in Sources */,
 				001603D522D371BC00E53399 /* LoginViewController.swift in Sources */,
 				001603D322D371BC00E53399 /* AppDelegate.swift in Sources */,
 				001603FB22D47E1000E53399 /* Constant.swift in Sources */,
+				001603FF22D4967A00E53399 /* CategoryCollectionViewCell.swift in Sources */,
+				0016040422D4E37400E53399 /* DataModel.swift in Sources */,
 				001603F322D4707B00E53399 /* Random.swift in Sources */,
 				001603F122D468DE00E53399 /* Service.swift in Sources */,
 				001603ED22D3ABCB00E53399 /* HomeViewController.swift in Sources */,
