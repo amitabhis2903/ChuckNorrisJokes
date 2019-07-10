@@ -22,6 +22,11 @@
 		001603FF22D4967A00E53399 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001603FE22D4967A00E53399 /* CategoryCollectionViewCell.swift */; };
 		0016040422D4E37400E53399 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016040322D4E37400E53399 /* DataModel.swift */; };
 		0016040622D5BFF300E53399 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016040522D5BFF300E53399 /* Helper.swift */; };
+		0016040822D5D83400E53399 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016040722D5D83400E53399 /* CategoryViewController.swift */; };
+		0016040A22D5DB6C00E53399 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016040922D5DB6C00E53399 /* UIView+extension.swift */; };
+		0016040F22D5FFFA00E53399 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0016040C22D5FFF800E53399 /* FBSDKShareKit.framework */; };
+		0016041022D5FFFA00E53399 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0016040D22D5FFFA00E53399 /* FBSDKCoreKit.framework */; };
+		0016041122D5FFFA00E53399 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0016040E22D5FFFA00E53399 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		001603FE22D4967A00E53399 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		0016040322D4E37400E53399 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		0016040522D5BFF300E53399 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		0016040722D5D83400E53399 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		0016040922D5DB6C00E53399 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		0016040C22D5FFF800E53399 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		0016040D22D5FFFA00E53399 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		0016040E22D5FFFA00E53399 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0016040F22D5FFFA00E53399 /* FBSDKShareKit.framework in Frameworks */,
+				0016041022D5FFFA00E53399 /* FBSDKCoreKit.framework in Frameworks */,
+				0016041122D5FFFA00E53399 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,9 @@
 				001603D122D371BC00E53399 /* ChuckNorrisJokes */,
 				001603D622D371BC00E53399 /* Main.storyboard */,
 				001603DB22D371BE00E53399 /* LaunchScreen.storyboard */,
+				0016040D22D5FFFA00E53399 /* FBSDKCoreKit.framework */,
+				0016040E22D5FFFA00E53399 /* FBSDKLoginKit.framework */,
+				0016040C22D5FFF800E53399 /* FBSDKShareKit.framework */,
 				001603D022D371BC00E53399 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,8 +97,8 @@
 				001603F722D47A0C00E53399 /* Model */,
 				001603F622D479E400E53399 /* Controller */,
 				001603F822D47A3800E53399 /* Network */,
+				0016040B22D5F76100E53399 /* Helper */,
 				001603F922D47A4A00E53399 /* Supporting FIles */,
-				0016040522D5BFF300E53399 /* Helper.swift */,
 			);
 			path = ChuckNorrisJokes;
 			sourceTree = "<group>";
@@ -93,6 +109,7 @@
 				001603D422D371BC00E53399 /* LoginViewController.swift */,
 				001603EC22D3ABCB00E53399 /* HomeViewController.swift */,
 				001603F422D4783200E53399 /* RandomJokeViewController.swift */,
+				0016040722D5D83400E53399 /* CategoryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -132,6 +149,15 @@
 				001603FE22D4967A00E53399 /* CategoryCollectionViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0016040B22D5F76100E53399 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0016040522D5BFF300E53399 /* Helper.swift */,
+				0016040922D5DB6C00E53399 /* UIView+extension.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +236,8 @@
 				001603F522D4783200E53399 /* RandomJokeViewController.swift in Sources */,
 				001603D522D371BC00E53399 /* LoginViewController.swift in Sources */,
 				001603D322D371BC00E53399 /* AppDelegate.swift in Sources */,
+				0016040A22D5DB6C00E53399 /* UIView+extension.swift in Sources */,
+				0016040822D5D83400E53399 /* CategoryViewController.swift in Sources */,
 				001603FB22D47E1000E53399 /* Constant.swift in Sources */,
 				001603FF22D4967A00E53399 /* CategoryCollectionViewCell.swift in Sources */,
 				0016040422D4E37400E53399 /* DataModel.swift in Sources */,
@@ -364,6 +392,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C2WZ997HDM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ChuckNorrisJokes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -382,6 +414,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C2WZ997HDM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ChuckNorrisJokes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

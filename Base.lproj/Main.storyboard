@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="905" y="492"/>
         </scene>
-        <!--View Controller-->
+        <!--Category View Controller-->
         <scene sceneID="6Dz-7a-2Td">
             <objects>
-                <viewController id="jsl-VT-w2K" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CategoryViewController" id="jsl-VT-w2K" customClass="CategoryViewController" customModule="ChuckNorrisJokes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZUc-C4-n2E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,48 +122,9 @@
                     <view key="view" contentMode="scaleToFill" id="nup-6t-pah">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animals" translatesAutoresizingMaskIntoConstraints="NO" id="Iq8-c8-fmt">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
-                            </imageView>
-                            <visualEffectView opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejQ-od-pNH">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="DDZ-D5-3GU">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="734"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </view>
-                                <blurEffect style="dark"/>
-                            </visualEffectView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="toj-i0-llE">
-                                <rect key="frame" x="16" y="377" width="343" height="323"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="323" id="sgc-bj-76T"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="toj-i0-llE" firstAttribute="leading" secondItem="McN-nP-NTo" secondAttribute="leading" constant="16" id="3zi-bk-8iC"/>
-                            <constraint firstItem="Iq8-c8-fmt" firstAttribute="top" secondItem="McN-nP-NTo" secondAttribute="top" id="4Ey-Kn-MYp"/>
-                            <constraint firstItem="McN-nP-NTo" firstAttribute="bottom" secondItem="ejQ-od-pNH" secondAttribute="bottom" id="63g-RM-7T1"/>
-                            <constraint firstItem="Iq8-c8-fmt" firstAttribute="leading" secondItem="McN-nP-NTo" secondAttribute="leading" id="Gke-pD-nDC"/>
-                            <constraint firstItem="McN-nP-NTo" firstAttribute="bottom" secondItem="toj-i0-llE" secondAttribute="bottom" constant="78" id="IoS-f9-blN"/>
-                            <constraint firstItem="ejQ-od-pNH" firstAttribute="top" secondItem="McN-nP-NTo" secondAttribute="top" id="NPi-9V-Pp5"/>
-                            <constraint firstItem="McN-nP-NTo" firstAttribute="bottom" secondItem="Iq8-c8-fmt" secondAttribute="bottom" id="RMT-wW-WPU"/>
-                            <constraint firstItem="McN-nP-NTo" firstAttribute="trailing" secondItem="toj-i0-llE" secondAttribute="trailing" constant="16" id="a5W-EK-U4x"/>
-                            <constraint firstItem="McN-nP-NTo" firstAttribute="trailing" secondItem="Iq8-c8-fmt" secondAttribute="trailing" id="fH1-MZ-joK"/>
-                            <constraint firstItem="McN-nP-NTo" firstAttribute="trailing" secondItem="ejQ-od-pNH" secondAttribute="trailing" id="suD-af-tMc"/>
-                            <constraint firstItem="ejQ-od-pNH" firstAttribute="leading" secondItem="McN-nP-NTo" secondAttribute="leading" id="wZB-j4-Pdy"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="McN-nP-NTo"/>
                     </view>
-                    <connections>
-                        <outlet property="jokeLbl" destination="toj-i0-llE" id="G78-wK-dBG"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CqC-wO-c40" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,7 +150,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="animals" width="250" height="166.5"/>
         <image name="theatre-masks_318-1606.jpg" width="626" height="626"/>
     </resources>
 </document>

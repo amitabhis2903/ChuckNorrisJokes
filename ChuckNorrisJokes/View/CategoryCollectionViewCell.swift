@@ -11,6 +11,8 @@ import UIKit
 class CategoryCollectionViewCell: UICollectionViewCell {
     
     
+    
+    //Container View
     let containerView: ViewDesgin = {
         let view = ViewDesgin()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -18,7 +20,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     }()
     
     
-    
+    //Image View
     let thumbnail: UIImageView = {
         let imageView = UIImageView()
         //imageView.backgroundColor = .blue
@@ -28,6 +30,8 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         return imageView
     }()
     
+    
+    //Label
     let imageLabel: UILabel = {
         let lbl = UILabel()
         lbl.text = "Hello"
@@ -62,7 +66,7 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         imageLabel.text = model.name
     }
     
-    func setupConstraint() {
+   fileprivate func setupConstraint() {
         
         //Container View Constraint
         

@@ -9,36 +9,70 @@
 import UIKit
 
 class RandomJokeViewController: UIViewController {
-
     
-    
-    @IBOutlet weak var jokeLbl: UILabel!
     
     var random: Random?
     
+    //UIView to containerView
+    let containerView: ViewDesgin = {
+        let view = ViewDesgin()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    
+    //UILabel to dispayJoke
+    let displayTxt: UILabel = {
+        let lbl = UILabel()
+        lbl.textColor = UIColor.random
+        lbl.font = UIFont.boldSystemFont(ofSize: 30)
+        lbl.numberOfLines = 0
+        lbl.textAlignment = .center
+        lbl.translatesAutoresizingMaskIntoConstraints = false
+        return lbl
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        getRandomJokes()
+        view.addSubview(containerView)
+        containerView.addSubview(displayTxt)
+        view.setGradientBackground(colorOne: Color.darkGray, colorTwo: Color.green)
+        setupConstraint()
         setupNavBar()
-       
-        // Do any additional setup after loading the view.
+        getRandomJokes()
     }
-
+    
+    
+    
+    fileprivate func setupConstraint() {
+        
+        //ContainerView Constraint
+        containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        containerView.widthAnchor.constraint(equalToConstant: 350).isActive = true
+        containerView.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        
+        
+        //DisplayTxt Constraint
+        displayTxt.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 5).isActive = true
+        
+        displayTxt.rightAnchor.constraint(equalTo: containerView.rightAnchor).isActive = true
+        
+        displayTxt.topAnchor.constraint(equalTo: containerView.topAnchor).isActive = true
+        
+        displayTxt.bottomAnchor.constraint(equalTo: containerView.bottomAnchor).isActive = true
+    }
+    
     
     fileprivate func getRandomJokes() {
         
         Service.shared.fetchGenericData(urlString: RANDOM_URL) { (random: Random?) in
             
-            //print("Data: \(random)")
-            
             DispatchQueue.main.async {
                 self.random = random
-                self.jokeLbl.textColor = UIColor.random
-                self.jokeLbl.text = random?.value
+                self.displayTxt.textColor = UIColor.random
+                self.displayTxt.text = random?.value
             }
-            
-            
         }
     }
     
@@ -48,7 +82,7 @@ class RandomJokeViewController: UIViewController {
         self.navigationItem.rightBarButtonItem  = refreshBarButtonItem
         
     }
-
+    
     @objc func getNewJokes() {
         self.getRandomJokes()
     }

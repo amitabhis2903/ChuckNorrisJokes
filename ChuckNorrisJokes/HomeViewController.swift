@@ -53,7 +53,9 @@ class HomeViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-       print("\(indexPath)")
+        let categVc = self.storyboard?.instantiateViewController(withIdentifier: "CategoryViewController") as! CategoryViewController
+        categVc.category = categories[indexPath.row].name
+        self.navigationController?.pushViewController(categVc, animated: true)
     }
 }
 
